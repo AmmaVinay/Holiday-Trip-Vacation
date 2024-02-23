@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* Navigation Styles */
+.navbar {
+    background-color: #3498db;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ecf0f1;
+}
+
+/* Responsive Navigation */
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid #fff;
+        background-color: #3498db;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Adjust padding for better spacing in the collapsed menu */
+    .navbar-collapse {
+        padding: 0.5rem;
+    }
+
+    /* Add a background color on hover for the collapsed menu items */
+    .navbar-nav .nav-link:hover {
+        background-color: #2980b9;
+    }
+}
+
+p.error-message {
+    color: red;
+    margin: 0;
+    font-size: 14px;
+}
+
+#sectionForm {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#sectionForm form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#sectionForm label {
+    font-weight: bold;
+    color: #495057;
+}
+
+#sectionForm input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+#sectionForm button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#sectionForm button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+#sectionDestination {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black background */
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.destination-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.destination-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.destination-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db;
+    /* Blue background for the banner */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.banner div {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.discount {
+    color: #e74c3c;
+    /* Red color for the discount text */
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #3498db;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.hero-section {
+    background-image: url('https://source.unsplash.com/1920x1080/?vacation');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-head {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+}
+
+.container.card {
+    margin-top: 50px;
+}
+
+.continent-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+
+.carding {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #3498db;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.carding:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carding h3 {
+    padding: 10px;
+}
+
+.carding p {
+    padding: 0 10px 10px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.social-wrap {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.inner {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.inner p {
+    font-size: 18px;
+}

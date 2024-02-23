@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="HolidaysCrowd.css">
+
+
+    <title>Holiday Trip Vacation</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Holiday Trips</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sectionHome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sectionContact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="toggleForm()">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="sectionForm">
+        <form class="bg-white">
+            <h2 class="text-center mb-4">Sign Up for Travel Updates</h2>
+            <div class="mb-3">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" />
+                <p class="error-message" id="nameError"></p>
+            </div>
+
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" />
+                <p class="error-message" id="emailError"></p>
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary">Get Updates</button>
+        </form>
+    </div>
+
+    <!-- Your existing sections -->
+
+    <script>
+        var formSection = document.getElementById('sectionForm');
+
+        function toggleForm() {
+            formSection.style.display = formSection.style.display === 'none' ? 'block' : 'none';
+        }
+
+        formSection.style.display = 'none';
+    </script>
+
+    <!-- Hero Section -->
+    <div id="sectionHome" class="hero-section">
+        <h2 class="hero-head">Your Dream Vacation Awaits</h2>
+        <p>Discover amazing destinations and plan your perfect holiday.</p>
+        <a href="#destinations" class="btn btn-primary btn-lg">Explore Now</a>
+    </div>
+
+    <!-- Destinations Section -->
+    <div id="destinations" class=" p-5 mb-5 bg-white rounded">
+        <div class=" shadow-lg p-5 mb-5">
+            <h2 style="font-weight: bold;" class="mb-5">Popular Destinations of Asia</h2>
+            <div class="continent-image">
+                <div class="carding border">
+                    <img class="shadow-lg h-48  rounded image"
+                        src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/12/Places-To-Visit-In-Tokyo-6_dec.jpg"
+                        alt="Tokyo">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Tokyo, Japan</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg h-48  image"
+                        src="https://www.oyorooms.com/blog/wp-content/uploads/2019/04/shutterstock_631736717.jpg"
+                        alt="Bali, Indonesia">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Bali, Indonesia</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg h-48 rounded image"
+                        src="https://traveltradejournal.com/wp-content/uploads/2022/09/IMG-6323.jpg"
+                        alt="Seoul, South Korea">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Seoul, South Korea</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/12/cover-image-of-Mumbai-travel-tips_3rd-dec.jpg"
+                        alt="Mumbai, India">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Mumbai, India</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2020-07/Hanoi%20daytrips.jpg?itok=qN5xh58E"
+                        alt="Hanoi, Vietnam">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Hanoi, Vietnam</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://img.traveltriangle.com/attachments/pictures/870645/original/1_(5).jpg"
+                        alt="Hong Kong">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Hong Kong</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://www.tripsavvy.com/thmb/4IhtAQ1Bh5Zte05C0iLqwGp3u_U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-642551278-5e19f089331d42dbb6b24e938fce1ab5.jpg"
+                        alt="Chiang Mai, Thailand">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Chiang Mai, Thailand</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image" src="https://www.japan-guide.com/thumb/XYZeXYZe3916_375.jpg"
+                        alt="Kyoto, Japan">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Kyoto, Japan</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://s27363.pcdn.co/wp-content/uploads/2016/06/Dome-of-the-Rock.jpg.optimal.jpg"
+                        alt="Jerusalem, Israel">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Jerusalem, Israel</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://services.dpauls.com/mediaserver/images/packages/united%20arab%20emirates/dubai/burj-al-arab-dubai-uae.jpg"
+                        alt="Reykjavik, Iceland">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Dubai, UAE</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Europe Destinations -->
+        <div class=" shadow-lg p-5 mb-5">
+            <h2 style="font-weight: bold;" class="mb-5 ">Popular Destinations of Europe</h2>
+            <div class="continent-image">
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/paris-a.jpg?itok=W_IJtU5p"
+                        alt="Paris, France">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Paris, France</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://a.loveholidays.com/media-library/production/48c3ff82168b2d6db83a5279c1d2da8367442011-3864x2239.jpg?auto=avif%2Cwebp&quality=45&dpr=2&optimize=high&fit=crop&width=2000"
+                        alt="Santorini, Greece">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Santorini, Greece</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://a.loveholidays.com/media-library/production/73842e65d182c5ddce219a66da2cf5d0036e7954-4683x3122.jpg?auto=avif%2Cwebp&quality=45&dpr=2&optimize=high&fit=crop&width=2000"
+                        alt="Rome, Italy">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Rome, Italy</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border ">
+                    <img class="shadow-lg rounded image"
+                        src="https://blog.goway.com/globetrotting/wp-content/uploads/2016/12/Park-Guell-in-Barcelona-Spain.jpg"
+                        alt="Barcelona, Spain">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Barcelona, Spain</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border ">
+                    <img class="shadow-lg rounded image"
+                        src="https://blog.goway.com/globetrotting/wp-content/uploads/2018/08/Vltava-River-and-old-city-centre-Prague-Czech-Republic-_1032665644.jpg"
+                        alt="Prague, Czech Republic">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Prague, Czech Republic</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border ">
+                    <img class="shadow-lg rounded image"
+                        src="https://www.schengenvisainfo.com/news/wp-content/uploads/2022/02/Amsterdam-summer-sunrise-Netherlands.jpg"
+                        alt="Amsterdam, Netherlands">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Amsterdam, Netherlands</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border ">
+                    <img class="shadow-lg rounded image"
+                        src="https://res.cloudinary.com/https-www-isango-com/image/upload/f_auto/t_m_Prod/v7682/europe/united%20kingdom/edinburgh/12942.jpg"
+                        alt="Edinburgh, Scotland">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Edinburgh, Scotland</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border ">
+                    <img class="shadow-lg rounded image"
+                        src="https://qph.cf2.quoracdn.net/main-qimg-07a14825674105f8d3b36e0fefc85f58-lq"
+                        alt="Swiss Alps, Switzerland">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Swiss Alps, Switzerland</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border ">
+                    <img class="shadow-lg rounded image"
+                        src="https://lp-cms-production.imgix.net/2021-06/shutterstockRF_662032261.jpg"
+                        alt="Dubrovnik, Croatia">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Dubrovnik, Croatia</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border ">
+                    <img class="shadow-lg rounded image"
+                        src="https://twotalltravellers.com/wp-content/uploads/2019/06/Iceland-in-April-Featured-Image.jpg"
+                        alt="Reykjavik, Iceland">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Reykjavik, Iceland</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- North America Destinations -->
+        <div class=" shadow-lg p-5 ">
+            <h2 style="font-weight: bold;" class="mb-5">Popular Destinations of North America</h2>
+            <div class="continent-image">
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://d1bv4heaa2n05k.cloudfront.net/user-images/1444124382002/shutterstock-59760706small_destinationMain_1444124438669.jpeg"
+                        alt="New York City, USA">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">New York City, USA</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image" src="https://res.taketours.com/images/niagara_falls_slide.webp"
+                        alt="Banff National Park, Canada">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Banff National Park, Canada</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSbWK_hquG_z1w9eEfPtb4Qyuq8PuHD349pw&usqp=CAU"
+                        alt="Cancun, Mexico">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Cancun, Mexico</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border">
+                    <img class="shadow-lg rounded image"
+                        src="https://res.klook.com/image/upload/fl_lossy.progressive,w_800,c_fill,q_85/Mobile/City/ct1vkydy5zb3cdltfmse.jpg"
+                        alt="San Francisco, USA">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">San Francisco, USA</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding  border">
+                    <img class="shadow-lg rounded image"
+                        src="https://www.tripsavvy.com/thmb/XHi-_ol9uPqoQzL9XfNYDN4VSBA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/canada--quebec--quebec-city--vieux-quebec-or-old-quebec--chateau-fontenac--156848485-5b06d0e3eb97de003701f257.jpg"
+                        alt="Quebec City, Canada">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Quebec City, Canada</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border ">
+                    <img class="shadow-lg rounded image"
+                        src=" https://www.intrepidtravel.com/sites/intrepid/files/styles/low-quality/public/Intrepid%20Travel-USA-Arizona-Grand%20Canyon-Havasu%20Falls.jpg"
+                        alt="Grand Canyon National Park, USA">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Grand Canyon National Park, USA</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border  ">
+                    <img class="shadow-lg rounded image"
+                        src=" https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/crm/hawaii/close-up_300ECE2E-F02C-48E1-94CA578CE2BE789E_22a6cdd7-d151-457e-962bf5ac61603e68.jpg"
+                        alt="Oahu, Hawaii, USA">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Oahu, Hawaii, USA</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border ">
+                    <img class="shadow-lg rounded image"
+                        src="https://static01.nyt.com/images/2015/04/12/travel/1236HOURS1/1236HOURS1-superJumbo-v2.jpg"
+                        alt="Antigua, Guatemala">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Antigua, Guatemala</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border ">
+                    <img class="shadow-lg rounded image"
+                        src="https://cdn.crazyfamilyadventure.com/wp-content/uploads/2021/10/OldFaithfulTrail.jpg"
+                        alt="Yellowstone National Park, USA">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Yellowstone National Park, USA</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+                <div class="carding border ">
+                    <img class="shadow-lg rounded image"
+                        src="https://www.thecoastalcampaign.com/wp-content/uploads/2019/06/DJI_0250-1080x675.jpeg "
+                        alt="Vancouver, Canada">
+                    <br>
+                    <div class="inner">
+                        <p class="text-center">Vancouver, Canada</p>
+                        <buttom><a href="#destination1-details">More About <i class="bi bi-arrow-right"></i></a>
+                        </buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <h1 class="text-center">Discover Your Dream Destination</h1>
+        <div id="sectionDestination" class="search-destination m-5 card shadow-lg p-5 travel"
+            style="background-image: url('https://www.fabhotels.com/blog/wp-content/uploads/2020/04/Chennai-to-Tirupati-by-road-1400.jpg'); background-size: cover; background-position: center;">
+            <div class="destination-content text-dark">
+                <h2 class="mb-3">Embark on a Journey of Wonders</h2>
+                <p>Immerse yourself in the enchanting beauty of [Destination]. From breathtaking landscapes to cultural
+                    treasures, your adventure awaits!</p>
+                <div class="banner d-flex justify-content-between align-items-center mt-4">
+                    <div>
+                        <p class="mb-0">Exclusive Offer:</p>
+                        <div class="discount">Up to <span class="text-dark">15%</span> off!</div>
+                    </div>
+                    <button class="btn btn-primary btn-lg">Explore Packages</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="sectionContact">
+        <footer class="container-fluid bg-dark text-white py-5 shadow-lg">
+            <!-- Contact Information -->
+            <div class="footer-wrap">
+                <div>
+                    <h4>Contact Us</h4>
+                    <p><i class="fa fa-envelope"></i> &nbsp; <a href="mailto:info@holidaytrips.com"
+                            class="text-white">info@holidaytrips.com</a></p>
+                    <p><i class="fa fa-phone"></i> &nbsp; <a href="tel:+1234567890" class="text-white">+1 (123)
+                            456-7890</a></p>
+                </div>
+                <!-- Visit Information -->
+                <div>
+                    <h4>Visit Us</h4>
+                    <p><i class="fa fa-map-marker"></i> &nbsp; 123 Vacation Street<br> Paradise City, PT 54321</p>
+                </div>
+                <!-- Social Links -->
+                <div>
+                    <h4>Follow Us</h4>
+                    <ul class="list-unstyled d-flex justify-content-center social-wrap">
+                        <li class="me-3">
+                            <a href="https://www.facebook.com/vinay.amma.96" target="_blank"
+                                class="text-decoration-none text-white">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://www.instagram.com/amma__vinay/" target="_blank"
+                                class="text-decoration-none text-white">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://twitter.com/amma__vinay" target="_blank"
+                                class="text-decoration-none text-white">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://www.linkedin.com/in/ammavinay/" target="_blank"
+                                class="text-decoration-none text-white">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:ammavinay917@gmail.com" class="text-decoration-none text-white">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <hr class="bg-light">
+            <div class="text-center mt-4">
+                <p>&copy; 2023 Holiday Trips. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
